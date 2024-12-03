@@ -4,11 +4,11 @@ import React, { useState } from 'react';
 const Home: React.FC = () => {
   const [step, setStep] = useState(1);
   const [password, setPassword] = useState('');
-  const correctPassword = '06092003'; // ตัวอย่างรหัสวันเกิด
+  const correctPassword = '06092003';
 
   const handlePasswordSubmit = () => {
     if (password === correctPassword) {
-      setStep(2); // ไปยังหน้าถัดไป
+      setStep(2); 
     } else {
       alert('ผิดอ่าาา เสียใจหว่ะะะ 😭');
     }
@@ -42,13 +42,13 @@ const Home: React.FC = () => {
             src="gift.png"
             alt="Gift Box"
             className="mx-auto w-48 h-48 animate-bounce"
-            onClick={() => setStep(3)} // คลิกเพื่อเปิด
+            onClick={() => setStep(3)} 
           />
         </div>
       )}
 
       {step === 3 && (
-        <div className="relative flex items-center justify-center w-full h-full">
+        <div className="relative flex items-center justify-center w-1/2 h-1/2">
           <div className="absolute inset-0 bg-heart bg-cover bg-center animate-heart-effect"></div>
           <video
             autoPlay
@@ -56,8 +56,7 @@ const Home: React.FC = () => {
             className="rounded-lg shadow-lg w-3/4"
             onEnded={() => setStep(4)}
           >
-            <source src="/videos/memory.mp4" type="video/mp4" />
-            เบราว์เซอร์ของคุณไม่รองรับการเล่นวิดีโอ
+            <source src="/4.mp4" type="video/mp4" />
           </video>
         </div>
       )}
