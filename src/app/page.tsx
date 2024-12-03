@@ -63,14 +63,32 @@ const Home: React.FC = () => {
 
       {step === 4 && (
         <div className="text-center space-y-5">
-          <h1 className="text-3xl font-bold text-white">เลือกการ์ด</h1>
-          <div className="flex justify-center space-x-4">
-            <button className="px-6 py-3 bg-blue-500 text-white rounded-lg shadow hover:bg-blue-600 transition">
-              การ์ดที่ 1
-            </button>
-            <button className="px-6 py-3 bg-green-500 text-white rounded-lg shadow hover:bg-green-600 transition">
-              การ์ดที่ 2
-            </button>
+          <h1 className="text-3xl font-bold text-white">เลือกของขวัญได้อย่างนึง</h1>
+          <div className="flex justify-center space-x-4 py-6 ">
+            <img
+            src="gift.png"
+            alt="Gift Box"
+            className="mx-auto w-48 h-48 animate-bounce"
+            onClick={() => setStep(3)} 
+          />
+            <img
+            src="gift.png"
+            alt="Gift Box"
+            className="mx-auto w-48 h-48 animate-bounce"
+            onClick={() => setStep(3)} 
+          />
+            <img
+            src="gift.png"
+            alt="Gift Box"
+            className="mx-auto w-48 h-48 animate-bounce"
+            onClick={() => setStep(3)} 
+          />
+            <img
+            src="gift.png"
+            alt="Gift Box"
+            className="mx-auto w-48 h-48 animate-bounce"
+            onClick={() => setStep(3)} 
+          />
           </div>
         </div>
       )}
