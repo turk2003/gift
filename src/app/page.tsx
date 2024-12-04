@@ -62,36 +62,37 @@ const Home: React.FC = () => {
       )}
 
       {step === 4 && (
-        <div className="text-center space-y-5">
-          <h1 className="text-3xl font-bold text-white">เลือกของขวัญได้อย่างนึง</h1>
-          <div className="flex justify-center space-x-4 py-6 ">
-            <img
-            src="gift.png"
-            alt="Gift Box"
-            className="mx-auto w-48 h-48 animate-bounce"
-            onClick={() => setStep(3)} 
-          />
-            <img
-            src="gift.png"
-            alt="Gift Box"
-            className="mx-auto w-48 h-48 animate-bounce"
-            onClick={() => setStep(3)} 
-          />
-            <img
-            src="gift.png"
-            alt="Gift Box"
-            className="mx-auto w-48 h-48 animate-bounce"
-            onClick={() => setStep(3)} 
-          />
-            <img
-            src="gift.png"
-            alt="Gift Box"
-            className="mx-auto w-48 h-48 animate-bounce"
-            onClick={() => setStep(3)} 
-          />
-          </div>
-        </div>
-      )}
+  <div className="text-center space-y-5">
+    <h1 className="text-3xl font-bold text-white">เลือกของขวัญได้อย่างนึง</h1>
+    <div className="flex flex-wrap justify-center gap-4 py-6">
+      <img
+        src="gift.png"
+        alt="Gift Box"
+        className="w-32 h-32 sm:w-40 sm:h-40 lg:w-48 lg:h-48 animate-bounce"
+        onClick={() => setStep(3)} 
+      />
+      <img
+        src="gift.png"
+        alt="Gift Box"
+        className="w-32 h-32 sm:w-40 sm:h-40 lg:w-48 lg:h-48 animate-bounce"
+        onClick={() => setStep(3)} 
+      />
+      <img
+        src="gift.png"
+        alt="Gift Box"
+        className="w-32 h-32 sm:w-40 sm:h-40 lg:w-48 lg:h-48 animate-bounce"
+        onClick={() => setStep(3)} 
+      />
+      <img
+        src="gift.png"
+        alt="Gift Box"
+        className="w-32 h-32 sm:w-40 sm:h-40 lg:w-48 lg:h-48 animate-bounce"
+        onClick={() => setStep(3)} 
+      />
+    </div>
+  </div>
+)}
+
     </div>
   );
 };
