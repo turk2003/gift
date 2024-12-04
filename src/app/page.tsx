@@ -4,7 +4,7 @@ import React, { useState } from 'react';
 const Home: React.FC = () => {
   const [step, setStep] = useState(1);
   const [password, setPassword] = useState('');
-  const correctPassword = '06092003';
+  const correctPassword = '12072024';
 
   const handlePasswordSubmit = () => {
     if (password === correctPassword) {
@@ -18,7 +18,7 @@ const Home: React.FC = () => {
     <div className="min-h-screen flex items-center justify-center bg-gradient-to-r from-pink-200 to-purple-300 p-5">
     {step === 1 && (
     <div className="flex flex-col items-center text-center space-y-10">
-      <h1 className="text-3xl font-bold text-white">ใส่วันเกิดเค้า</h1>
+      <h1 className="text-3xl font-bold text-white">ใส่วันที่เราเจอกันวันเเรก</h1>
       <input
         type="password"
         placeholder="วัน/เดือน/ปี (DDMMYYYY)"
@@ -56,7 +56,7 @@ const Home: React.FC = () => {
             className="rounded-lg shadow-lg w-3/4"
             onEnded={() => setStep(4)}
           >
-            <source src="/4.mp4" type="video/mp4" />
+            <source src="/final.mp4" type="video/mp4" />
           </video>
         </div>
       )}
