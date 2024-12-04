@@ -69,29 +69,99 @@ const Home: React.FC = () => {
         src="gift.png"
         alt="Gift Box"
         className="w-32 h-32 sm:w-40 sm:h-40 lg:w-48 lg:h-48 animate-bounce"
-        onClick={() => setStep(3)} 
+        onClick={() => setStep(5)} 
       />
       <img
         src="gift.png"
         alt="Gift Box"
         className="w-32 h-32 sm:w-40 sm:h-40 lg:w-48 lg:h-48 animate-bounce"
-        onClick={() => setStep(3)} 
+        onClick={() => setStep(6)} 
       />
       <img
         src="gift.png"
         alt="Gift Box"
         className="w-32 h-32 sm:w-40 sm:h-40 lg:w-48 lg:h-48 animate-bounce"
-        onClick={() => setStep(3)} 
+        onClick={() => setStep(7)} 
       />
       <img
         src="gift.png"
         alt="Gift Box"
         className="w-32 h-32 sm:w-40 sm:h-40 lg:w-48 lg:h-48 animate-bounce"
-        onClick={() => setStep(3)} 
+        onClick={() => setStep(8)} 
       />
     </div>
   </div>
-)}
+    )}
+    {
+      step===5 &&(
+       <div className="bg-gradient-to-r from-pink-500 to-purple-500 p-8 rounded-lg shadow-lg text-center space-y-5">
+  <h1 className="text-4xl font-bold text-white">เม่งเตง</h1>
+  <img
+    src="/meng.PNG"
+    alt="meng"
+    className="w-48 h-48 mx-auto rounded-xl border-4 border-white shadow-lg"
+  />
+  <div className="text-white space-y-2">
+    <h2 className="text-lg font-semibold">ด้วยเม่งของเตงสะท้อนแสงจ้า</h2>
+    <h2 className="text-lg font-semibold">ทำให้เตงสามารถขออะไรเค้าก็ได้หนึ่งข้อ</h2>
+  </div>
+</div>
+
+      )
+    }
+    {
+      step===6 &&(
+       <div className="bg-gradient-to-r from-green-500 to-blue-500 p-8 rounded-lg shadow-lg text-center space-y-5">
+  <h1 className="text-4xl font-bold text-white">โบ้เบ่</h1>
+  <img
+    src="/empty.JPG"
+    alt="empty"
+    className="w-48 h-48 mx-auto rounded-xl border-4 border-white shadow-lg"
+  />
+  <div className="text-white space-y-2">
+    <h2 className="text-lg font-semibold">เปิดมาก็ว่างเปล่า</h2>
+    <h2 className="text-lg font-semibold">อดได้อะไรเลย ว้าย~~~</h2>
+  </div>
+</div>
+
+      )
+    }
+     {
+      step===7 &&(
+       <div className="bg-gradient-to-r from-yellow-500 to-orange-500 p-8 rounded-lg shadow-lg text-center space-y-5">
+  <h1 className="text-4xl font-bold text-white">กระกร้าเเสนอร่อย</h1>
+  <img
+    src="/food.JPG"
+    alt="food"
+    className="w-48 h-48 mx-auto rounded-xl border-4 border-white shadow-lg"
+  />
+  <div className="text-white space-y-2">
+    <h2 className="text-lg font-semibold">ตระกร้าที่มีเเต่ของกินแสนอร่อย</h2>
+    <h2 className="text-lg font-semibold">เค้าจาเลี้ยงเตงอารายก็ด้ายที่เตงอยากกิน</h2>
+  </div>
+</div>
+
+      )
+    }
+     {
+      step===8 &&(
+       <div className="bg-gradient-to-r from-gray-400 to-black p-8 rounded-lg shadow-lg text-center space-y-5">
+  <h1 className="text-4xl font-bold text-white">เค้าเองงง</h1>
+  <img
+    src="/me.JPG"
+    alt="me"
+    className="w-48 h-48 mx-auto rounded-xl border-4 border-white shadow-lg"
+  />
+  <div className="text-white space-y-2">
+    <h2 className="text-lg font-semibold">เค้าเองจ้าาาา 😂😂</h2>
+    <h2 className="text-lg font-semibold">เตงจาทำอารายกะเค้ากะด้ายเค้ายอมหมดเลย</h2>
+  </div>
+</div>
+
+      )
+    }
+
+
 
     </div>
   );
