@@ -37,7 +37,7 @@ const Home: React.FC = () => {
 
       {step === 2 && (
         <div className="text-center space-y-5">
-          <h1 className="text-3xl font-bold text-white">เซอร์ไพรส์!</h1>
+          <h1 className="text-3xl font-bold text-white">เก่งมากกก เปิดเลย</h1>
           <img
             src="gift.png"
             alt="Gift Box"
@@ -160,9 +160,6 @@ const Home: React.FC = () => {
 
       )
     }
-
-
-
     </div>
   );
 };
